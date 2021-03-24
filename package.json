@@ -1,0 +1,62 @@
+{
+    "name": "maude",
+    "displayName": "Maude language support for Visual Studio Code",
+    "description": "",
+    "version": "0.7.0",
+    "publisher": "ajayeeralla",
+    "engines": {
+        "vscode": "^1.18.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ajayeeralla/maude-vscode.git"
+    },
+    "activationEvents": [
+        "onLanguage:maude"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "maude",
+                "aliases": [
+                    "Maude",
+                    "maude"
+                ],
+                "extensions": [
+                    ".maude"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "maude",
+                "scopeName": "source.maude",
+                "path": "./syntaxes/maude.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test",
+        "lint": "eslint . --ext .ts, .tsx"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "tslint": "^5.8.0",
+        "vscode-languageclient": "^3.3.0",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42",
+        "@typescript-eslint/eslint-plugin": "^4.16.0",
+        "@typescript-eslint/parser": "^4.16.0",
+        "eslint": "^7.21.0"
+    }
+}
