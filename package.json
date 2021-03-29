@@ -2,7 +2,7 @@
     "name": "maude",
     "displayName": "Maude language support for Visual Studio Code",
     "description": "",
-    "version": "1.2.0",
+    "version": "1.0.0",
     "publisher": "ajayeeralla",
     "engines": {
         "vscode": "^1.18.0"
