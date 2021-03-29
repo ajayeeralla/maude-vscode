@@ -24,3 +24,13 @@ A [Maude](https://en.wikipedia.org/wiki/Maude_system) syntax highlighting extens
 Initial release of basic syntax highlighting Maude extension for VSCode.
 
 
+### 1.1.0 
+
+- snippet support
+
+    | Names |
+    | :---: |
+    | if |
+    | mod |
+    | fmod |
+    | attributes (attr) |
