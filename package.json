@@ -38,6 +38,12 @@
                 "scopeName": "source.maude",
                 "path": "./syntaxes/maude.tmLanguage.json"
             }
+        ],
+        "snippets": [
+            {
+                "language": "maude",
+                "path": "./snippets/snippets.json"
+            }
         ]
     },
     "scripts": {

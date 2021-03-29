@@ -1,0 +1,30 @@
+{
+	"if": {
+		"prefix": "if",
+		"scope": "maude",
+		"body": [ "if (${1:condition}) \n then (${2:body1}) \n else (${3:body2}) fi" ],
+		"description": "conditional branching"
+	},
+	
+	"mod": {
+		"prefix": [ "mod" ],
+		"scope": "maude",
+		"body": [ "mod ${0:NAME} is", "\t${1:...}", "endm" ],
+		"description": "module template"
+	},
+
+	"fmod": {
+		"prefix": [ "fmod" ],
+		"scope": "maude",
+		"body": [ "fmod ${0:NAME} is", "\t${1:...}", "endfm" ],
+		"description": "functional module template"
+	},
+
+	"attributes": {
+		"prefix": "attr",
+		"scope": "maude",
+		"body": [ "[ ctor ${1|comm,assoc,idem|} id: ${2:Operator} prec ${3:number} ] ." ],
+		"description": "attributions of operators"
+	}
+
+}

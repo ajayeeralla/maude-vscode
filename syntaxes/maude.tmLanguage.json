@@ -31,7 +31,7 @@
 				},
 				{
 					"name": "keyword.other.maude",
-					"match" : "\\b(mod|eq|ceq|vars|op|endm|is|pr|ditto|ctor|prec|assoc|comm)\\b"
+					"match" : "\\b(mod|fmod|eq|ceq|vars|op|endm|endfm|is|pr|ditto|ctor|prec|assoc|comm)\\b"
 				},
 				{
 					"name": "keyword.bool.maude",
